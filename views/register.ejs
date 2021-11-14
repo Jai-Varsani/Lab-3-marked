@@ -1,0 +1,47 @@
+<%-include('header');-%>
+    <div class="content">
+        <h1 id="welcome">WELCOME to Webstore</h1>
+    </div> 
+
+
+    <form method="POST" action="/api/register">
+        <label>Society</label> <br>
+        <input type="text" name="Society" placeholder="Enter Your Society Name.."> <br>
+        <br>
+        <label>Name / Contact</label> <br>
+        <input type="text" name="Contact" placeholder="Enter Your Full Name..."> <br>
+        <br>
+        <label>Address</label> <br>
+        <input type="text" name ="Address" placeholder="Enter Your Address"> <br>
+        <br>
+        <label>Zip Code</label> <br>
+        <input type="text" name="Zipcode" placeholder="Enter In Your Zip Code..."><br>
+        <br>
+        <label> City </label> <br>
+        <input type="text" name="City" placeholder="Enter In Your City..."><br>
+        <br>
+        <label>Phone</label> <br>
+        <input type="text" name="Phone" placeholder="Enter Your Phone Number..."> <br>
+        <br>
+        <label>Fax</label> <br>
+        <input type="text" name="Fax" placeholder="Enter Your Fax Number..."> <br>
+        <br>
+        <label>Confirmation</label> <br>
+        <input type="number" name="Confiramtion" placeholder="Enter Your Confiramtion Value..."> <br>
+        <br>
+        <label>Payment</label> <br>
+        <input type="text" name="Payment" placeholder="Enter Your Payment Details..."> <br>
+        <br>
+        <label>Information</label> <br>
+        <input type="text" name="Information" placeholder="Enter Short Information..."> <br>
+        <br>
+        <label>Max Outstanding</label> <br>
+        <input type="text" name="maxOutstanding" placeholder="Enter Your Phone Number..."> <br>
+        <br>
+
+        <input type="submit" value="Submit">
+        <br>
+    </form>
+    <br>
+
+<%-include('footer');-%>

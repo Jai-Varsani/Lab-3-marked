@@ -1,0 +1,15 @@
+<%-include('header');-%>
+    <div class="content">
+        <h1 id="welcome">WELCOME to Webstore</h1>
+    </div> 
+    <form method="GET" action="/api/login"></form>
+        <label>Name</label><br>
+        <input type="text" name="Name" placeholder="Your name..">
+        <br>
+        <label>Password</label> 
+        <br>
+        <input type="password" name="Password" placeholder="Password.."><br>
+        <br>
+        <input type="submit" value="Submit">
+
+<%-include('footer');-%>
