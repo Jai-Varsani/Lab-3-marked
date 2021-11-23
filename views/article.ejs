@@ -1,0 +1,19 @@
+<%-include('header');-%>
+<h1>Selected articles</h1>
+        <table>
+                <tr><th>Name</th><td>    <%= product.name %></td></tr>
+                <tr></tr>
+                <tr><th>Reference</th><td>    <%= product.reference %></td></tr>
+                <tr></tr>
+                <tr><th>Category</th><td>    <%= product.category %></td></tr>
+                <tr></tr>
+                <tr><th>Price</th><td>    <%= product.price %> AED</td></tr>
+                <tr></tr>
+                <tr><th>VAT</th><td>    <%= product.vat %> AED</td></tr>
+                <tr></tr>
+                <tr><th>Stock</th><td>    <%= product.stock %></td></tr>
+                <tr></tr>
+                <tr><th>Critical Stock</th><td>    <%= product.critical_stock %></td></tr>  
+        </table>
+        <br>  
+<%-include('footer');-%>

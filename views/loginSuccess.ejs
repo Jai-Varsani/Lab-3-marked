@@ -1,0 +1,8 @@
+<%-include('header');-%>
+
+<p>Login Successful </p>
+<p> <%= clients[0].num_client %> </p>
+<p> <%= clients[0].username %> </p>
+<p><a href="/api/Login/<%= clients[0].num_client %>"> Here are your details.</a></p>
+<br>
+<%-include('footer');-%>

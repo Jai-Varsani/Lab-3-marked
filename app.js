@@ -1,7 +1,11 @@
 const express = require('express');
+const { use } = require('./routes/apis');
 
 //creating app
 const app = express();
+
+
+
 
 //not needed because the file is being processed by ejs file in views.
 //send an HTTP response when receiving HTTP GET /
@@ -41,6 +45,14 @@ app.get('/login', (req, res) => {
     res.render('login'); 
 });
 
+// using JSON and URL Encoded middleware 
+app.use(express.json()); 
+app.use(express.urlencoded({ 
+    extended: true 
+}));
+
 //pass requests to the router middleware
 const router = require('./routes/apis');
+const session = require('express-session');
+app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 60000 } }))
 app.use(router);

@@ -1,47 +1,43 @@
 <%-include('header');-%>
     <div class="content">
-        <h1 id="welcome">WELCOME to Webstore</h1>
+        <h1 id="welcome">Register Now!</h1>
     </div> 
 
-
-    <form method="POST" action="/api/register">
-        <label>Society</label> <br>
-        <input type="text" name="Society" placeholder="Enter Your Society Name.."> <br>
-        <br>
-        <label>Name / Contact</label> <br>
-        <input type="text" name="Contact" placeholder="Enter Your Full Name..."> <br>
-        <br>
-        <label>Address</label> <br>
-        <input type="text" name ="Address" placeholder="Enter Your Address"> <br>
-        <br>
-        <label>Zip Code</label> <br>
-        <input type="text" name="Zipcode" placeholder="Enter In Your Zip Code..."><br>
-        <br>
-        <label> City </label> <br>
-        <input type="text" name="City" placeholder="Enter In Your City..."><br>
-        <br>
-        <label>Phone</label> <br>
-        <input type="text" name="Phone" placeholder="Enter Your Phone Number..."> <br>
-        <br>
-        <label>Fax</label> <br>
-        <input type="text" name="Fax" placeholder="Enter Your Fax Number..."> <br>
-        <br>
-        <label>Confirmation</label> <br>
-        <input type="number" name="Confiramtion" placeholder="Enter Your Confiramtion Value..."> <br>
-        <br>
-        <label>Payment</label> <br>
-        <input type="text" name="Payment" placeholder="Enter Your Payment Details..."> <br>
-        <br>
-        <label>Information</label> <br>
-        <input type="text" name="Information" placeholder="Enter Short Information..."> <br>
-        <br>
-        <label>Max Outstanding</label> <br>
-        <input type="text" name="maxOutstanding" placeholder="Enter Your Phone Number..."> <br>
-        <br>
-
-        <input type="submit" value="Submit">
-        <br>
-    </form>
+        <form action="/api/register" method="post">
+            <label>Username</label><br>
+            <input type="text" name="username" placeholder="Enter your username here..." required autofocus>
+            <br>
+            <label>Password</label><br>
+            <input type="password" name="passwsord" placeholder="Enter your password here..." required>
+            <br>
+            <label>Society</label><br>
+            <input type="text" name="society" placeholder="Enter the name of your society..." required>
+            <br>
+            <label>Name / Contact</label><br>
+            <input type="text" name="contact" placeholder="Enter Your Name here..." required>
+            <br>
+            <label>Address</label><br>
+            <input type="text" name="address" placeholder="Enter Your Address info here..." required>
+            <br>
+            <label>Zipcode</label><br>
+            <input type="text" name="zipcode" placeholder="Enter your zipcode info here..." required>
+            <br>
+            <label>City</label><br>
+            <input type="text" name="city" placeholder="Enter the city where you reside in here..." required>
+            <br>
+            <label>Phone</label><br>
+            <input type="text" name="phone" placeholder="Enter your phone number..." required>
+            <br>
+            <label>Fax</label><br>
+            <input type="text" name="fax" placeholder="Enter your fax details" required>
+            <br>
+            <label>Maximum Outstanding</label><br>
+            <input type="text" name="max_outstanding" placeholder="Enter the maximum outstanding details" required>
+            <br> <br>
+            <button type="submit">Register Now!</button>
+        </form>
+    </div>
+    
     <br>
 
 <%-include('footer');-%>
